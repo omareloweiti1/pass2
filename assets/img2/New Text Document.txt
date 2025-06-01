@@ -1,0 +1,165 @@
+
+      <div class="background-section   mobile-version">
+        <!-- خطوط -->
+        <img src="assets/img2/line1.png" class="decoration lines1" alt="خط 1">
+        <img src="assets/img2/line2.png" class="decoration lines2" alt="خط 2">
+
+        <!-- دبابيس -->
+        <img src="assets/img2/pin.png" class="decoration pin1" alt="pin 1">
+        <img src="assets/img2/pin.png" class="decoration pin2" alt="pin 2">
+        <img src="assets/img2/pin.png" class="decoration pin3" alt="pin 3">
+        <img src="assets/img2/pin.png" class="decoration pin4" alt="pin 4">
+
+        <!-- مثلثات -->
+        <img src="assets/img2/triangle (1).png" class="decoration triangle1" alt="مثلث 1">
+        <img src="assets/img2/triangle (2).png" class="decoration triangle2" alt="مثلث 2">
+        <img src="assets/img2/triangle (3).png" class="decoration triangle3" alt="مثلث 3">
+        <img src="assets/img2/triangle (4).png" class="decoration triangle4" alt="مثلث 4">
+
+        <div class="content">
+          <h2>من نحن</h2>
+          <p>
+            نحن شركة الحلول الاحترافية المتطورة للخدمات اللوجستية، نقدم حلولاً متكاملة وشاملة لتلبية احتياجات
+            عملائنا المتنوعة في عالم اللوجستيات.
+          </p>
+          <p>
+            نتميز بخبرتنا القوية وقدرتنا العالية على تحليل سلاسل الإمداد؛ بهدف تقديم أفضل الحلول التي تجمع بين
+            الكفاءة وتقليل التكاليف. <br> نحن ملتزمون بتوفير خدمات لوجستية عالية الجودة تساهم في تحقيق نجاح عملائنا.
+          </p>
+        </div>
+
+
+      </div>
+
+
+
+@media (max-width: 1024px) {
+  .aboutUsBackground {
+    display: none;
+  }
+
+  .mobile-version {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutUsBackground {
+    display: none;
+  }
+
+  .background-section {
+    position: relative;
+    height: 340px;
+    width: auto;
+    max-width: 430px;
+    background: url("../img2/backe.png") no-repeat center center/cover;
+    overflow: hidden;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    right: unset;
+    top: unset;
+  }
+
+  .background-section .decoration {
+    position: absolute;
+  }
+
+  .lines1 {
+    top: 50px;
+    right: 5%;
+    width: auto;
+    max-width: 370px;
+    height: 340px;
+  }
+
+  .lines2 {
+    width: auto;
+    max-width: 500px;
+    height: 500px;
+    top: 60px;
+    right: -60px;
+  }
+
+  .pin1 {
+    width: 20px;
+    height: 30px;
+    top: 5.4%;
+    right: 2.7%;
+  }
+  .pin2 {
+    width: 20px;
+    height: 30px;
+    top: 16%;
+    left: 6%;
+  }
+  .pin3 {
+    width: 20px;
+    height: 30px;
+    bottom: 12%;
+    left: 14%;
+  }
+  .pin4 {
+    width: 20px;
+    height: 30px;
+    bottom: 22%;
+    right: 10%;
+  }
+
+  .triangle1 {
+    width: 13px;
+    height: 13px;
+    bottom: 5%;
+    right: 5%;
+  }
+  .triangle2 {
+    width: 10px;
+    height: 10px;
+    bottom: 30%;
+    left: 6%;
+  }
+  .triangle3 {
+    width: 10px;
+    height: 10px;
+    top: 30%;
+    right: 30%;
+  }
+  .triangle4 {
+    width: 10px;
+    height: 10px;
+    top: 10%;
+    left: 4%;
+  }
+}
+@media (max-width: 1024px) {
+  .aboutUsContent {
+    display: none !important;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .background-section .content {
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+  }
+  .background-section .content h2 {
+    font-size: 36px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .background-section .content p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+  }
+} */
+
+
+
+
+
