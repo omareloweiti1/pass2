@@ -131,7 +131,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 1rem;
-  }
+  } 
 
   .offcanvas .navbar-nav .nav-link:hover {
     color: var(--primary-blue);
@@ -147,7 +147,7 @@ body {
     color: var(--primary-blue);
   }
 } 
-.btn-mobile-nav {
+.btn-mobile-nav { 
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
@@ -839,6 +839,12 @@ select:focus {
   border: none;
   border-radius: 10px;
 }
+.modal-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .marg {
   margin-left: 200px;
