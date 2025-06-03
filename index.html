@@ -130,10 +130,10 @@
         <div class="offcanvas-body d-flex flex-column justify-content-between">
             <ul class="navbar-nav link-nav mb-4">
                 <li class="nav-item mt-item">
-                    <a class="nav-link" href="#about-us" data-bs-dismiss="offcanvas" >About Us</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services" data-bs-dismiss="offcanvas" >Our Services</a>
+                    <a class="nav-link" href="#services">Our Services</a>
                 </li>
             </ul>
 
@@ -917,6 +917,23 @@
     <!-- Scripts -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/all.min.js"></script>
+
+    <!-- offcanvas -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const offcanvasElement = document.getElementById('mobileMenu');
+            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+            // استهداف جميع الروابط داخل الـ offcanvas التي تحتوي على href يبدأ بـ #
+            const allLinks = offcanvasElement.querySelectorAll('a[href^="#"]');
+
+            allLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    offcanvas.hide(); // إغلاق القائمة عند النقر على أي رابط داخلي
+                });
+            });
+        });
+    </script>
 
     <!-- Start Popup -->
     <script>
