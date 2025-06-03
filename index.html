@@ -924,16 +924,23 @@
             const offcanvasElement = document.getElementById('mobileMenu');
             const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
 
-            // استهداف جميع الروابط داخل الـ offcanvas التي تحتوي على href يبدأ بـ #
+            // استهداف كل الروابط الداخلية التي تبدأ بـ #
             const allLinks = offcanvasElement.querySelectorAll('a[href^="#"]');
 
             allLinks.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    offcanvas.hide(); // إغلاق القائمة عند النقر على أي رابط داخلي
+                link.addEventListener('click', function (e) {
+                    // السماح بالتنقل إلى الرابط
+                    const targetId = this.getAttribute('href');
+
+                    // تأخير الإغلاق قليلًا للسماح بالتنقل
+                    setTimeout(function () {
+                        offcanvas.hide();
+                    }, 300); // 300 مللي ثانية = 0.3 ثانية
                 });
             });
         });
     </script>
+
 
     <!-- Start Popup -->
     <script>

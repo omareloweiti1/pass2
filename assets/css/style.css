@@ -146,7 +146,7 @@ body {
   .offcanvas .bi:hover { 
     color: var(--primary-blue);
   }
-}
+} 
 .btn-mobile-nav {
   font-size: 20px;
   font-weight: 600;
