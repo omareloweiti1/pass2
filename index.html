@@ -39,12 +39,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.min.css">
 
+    <!-- Include Bootstrap Icons for social media -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
 
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-lg sticky-top custom-border">
+    <!-- <nav class="navbar navbar-expand-lg sticky-top custom-border">
         <div class="container custom-container">
             <a class="navbar-brand " href="#">
                 <img class="img-fluid" src="assets/img/Logo/Logo.png" alt="Pass Logo">
@@ -52,10 +56,45 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
                 aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
+            </button> -->
+
+    <!-- <div class="collapse navbar-collapse justify-content-between" id="main"> -->
+    <!-- Centered Links -->
+    <!-- <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="#services">Our Services</a>
+                    </li>
+                </ul> -->
+
+    <!-- Right Side Buttons -->
+    <!-- <div class="d-flex flex-column flex-lg-row gap-2 link-nav">
+                    <a class="btn btn-lang" href="index.ar.html">العربية</a>
+                    <a class="btn rounded-2 main-btn text-white" href="#request">Request Service</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+    <!-- End Header -->
+
+
+
+
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-border">
+        <div class="container custom-container">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="assets/img/Logo/Logo.png" alt="Pass Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="main">
-                <!-- Centered Links -->
+            <div class="collapse navbar-collapse justify-content-between d-none d-lg-flex" id="main">
+                <!-- Centered Links (Desktop) -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3" href="#about-us">About Us</a>
@@ -65,15 +104,89 @@
                     </li>
                 </ul>
 
-                <!-- Right Side Buttons -->
+                <!-- Right Side Buttons (Desktop) -->
                 <div class="d-flex flex-column flex-lg-row gap-2 link-nav">
-                    <a class="btn btn-lang" href="index.ar.html">العربية</a>
+                    <a class="btn btn-lang " href="index.ar.html">العربية</a>
                     <a class="btn rounded-2 main-btn text-white" href="#request">Request Service</a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Offcanvas for Mobile & iPad -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="assets/img/Logo/Logo.png" alt="Pass Logo">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <a class="btn btn-lang fs-5 fw-medium btn-ar " href="index.ar.html">العربية</a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+
+
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav link-nav mb-4">
+                <li class="nav-item mt-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Our Services</a>
+                </li>
+            </ul>
+
+            <!-- Social Icons & Request Service Button -->
+            <div>
+                <div class="d-flex justify-content-center gap-3 mb-3">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+                <a class="btn btn-primary  btn-mobile-nav main-btn text-white" href="#request">Request Service</a>
+            </div>
+        </div>
+    </div>
     <!-- End Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Start  -->
@@ -87,9 +200,10 @@
                     <div
                         class="col-lg-6 col-md-12 order-1 order-lg-0  text-center text-lg-start animate__animated animate__fadeInLeft">
                         <div class="text mt-5 ">
-                            <h1 class="h1Hero">Simplify your business and enhance efficiency with
+                            <h1 class="fs-45">Simplify your business and enhance efficiency with
                                 integrated logistics</h1>
-                            <h3 class="text-black-50 fs-6">Extensive experience and a proven track record within the
+                            <h3 class="text-black-50 fs-5 fs-sm-6">Extensive experience and a proven track record within
+                                the
                                 Kingdom of Saudi Arabia</h3>
                         </div>
                         <a href="#request"><button class="request-hero-btn btn rounded-2 main-btn text-white">Request
@@ -113,8 +227,9 @@
                     <img src="assets/img/HowweareImage.svg" alt="About Us Icon"
                         class="about-overlay-icon  position-absolute top-50 start-50 translate-middle z-1 " />
                     <div class="aboutUsContent  position-relative mx-auto z-2 ">
-                        <h2 class="text-center justify-content-center overflow-hidden fw-semibold lh-lg">About Us</h2>
-                        <p class="text-center fs-5 fw-medium lh-lg pb-1 overflow-hidden">
+                        <h2 class="text-center justify-content-center overflow-hidden fw-semibold lh-lg fs-45">About Us
+                        </h2>
+                        <p class="text-center fs-5 fw-medium lh-lg pb-1 overflow-hidden fs-sm-6">
                             We are Pass, the Professional Advanced Smart Solutions for Logistics Services company,
                             We are Pass, the Professional Advanced Smart Solutions for Logistics Services company,
                             providing
@@ -132,23 +247,23 @@
         <!-- Start services-header-section -->
         <section class="service-filter text-center" id="services">
             <div class="container">
-                <h2 class="fw-semibold lh-lg text-center">Our Services</h2>
-                <p class="subtitle fs-4 fw-medium lh-lg text-center mb-4">We strive for your comfort in providing the
+                <h2 class="fw-semibold lh-lg text-center fs-45">Our Services</h2>
+                <p class="subtitle fs-5 fw-medium lh-lg text-center mb-4 fs-sm-6">We strive for your comfort in
+                    providing the
                     best services</p>
                 <div class="row">
                     <div class="services-filter d-flex flex-wrap justify-content-center gap-3 mb-4">
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden active"
-                            data-target="supply-chain">Supply Chain Management &
-                            Consultations</button>
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden"
+                        <button class="filter-btn fs-5 fs-sm-6 fw-medium lh-lg overflow-hidden active"
+                            data-target="supply-chain">Supply Chain Management </button>
+                        <button class="filter-btn fs-5 fs-sm-6 fw-medium lh-lg overflow-hidden"
                             data-target="customs-clearance">Customs Clearance</button>
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden"
+                        <button class="filter-btn fs-5 fs-sm-6  fw-medium lh-lg overflow-hidden"
                             data-target="international-shipping"> Shipping Services</button>
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden"
+                        <button class="filter-btn fs-5 fs-sm-6  fw-medium lh-lg overflow-hidden"
                             data-target="distribution-management">Distribution </button>
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden"
+                        <button class="filter-btn fs-5 fs-sm-6  fw-medium lh-lg overflow-hidden"
                             data-target="storage-services">Storage Services</button>
-                        <button class="filter-btn fs-5 fw-medium lh-lg overflow-hidden"
+                        <button class="filter-btn fs-5 fs-sm-6  fw-medium lh-lg overflow-hidden"
                             data-target="land-transportation">Land Transport</button>
                     </div>
                 </div>
@@ -165,15 +280,15 @@
                         <h3>
                             Supply Chain Management & Consultations
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6">
                             Improve the efficiency of your supply chain
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             At Pass, we specialize in transforming supply chains into streamlined and efficient
                             systemsthat drive business success. With our extensive experience, we provide customized
                             consulting servicesdesigned toenhance every aspect of your supply chain.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We have proven expertise with years of experience in supply chain management and data-driven
                             organizational insights.
                         </p>
@@ -200,10 +315,10 @@
                         <h3>
                             Customs Clearance
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6">
                             Don't let your shipments get stuck in customs
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We simplify customs procedures for you to ensure your shipments move smoothly across
                             borders. We have a
                             team of customs experts who will complete all required documents for you in the shortest
@@ -232,21 +347,21 @@
                         <h3>
                             International Shipping Services
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6">
                             Reliable transportation solutions for your logistics needs
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We specialize in providing effective and reliable transportation services specifically
                             designed according
                             to your business requirements outside the Kingdom's borders.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             Our specialized team ensures your goods arrive at their destination safely and on time (by
                             land, sea, or
                             air)
                         </p>
 
-                        <p id="summary">
+                        <p id="summary" class="fs-sm-6">
                             Navigating international shipping can be complex. Our experienced team handles all aspects
                             of
                             international shipping, including customs clearance, documentation, and compliance, so you
@@ -257,14 +372,17 @@
                         </p>
 
                         <div id="more-text" style="display: none; margin-left: 0;" class="service-text p">
-                            <p>We provide many facilities that ensure your goods arrive on the agreed schedule with the
+                            <p class="fs-sm-6">We provide many facilities that ensure your goods arrive on the agreed
+                                schedule with the
                                 lowest cost
                                 percentage.</p>
-                            <p>We accommodate unique transportation needs</p>
-                            <p>Our regularly maintained fleet is equipped to handle a variety of shipments, ensuring
+                            <p class="fs-sm-6">We accommodate unique transportation needs</p>
+                            <p class="fs-sm-6">Our regularly maintained fleet is equipped to handle a variety of
+                                shipments, ensuring
                                 reliability and
                             </p>
-                            <p>We prioritize the safety of your goods, applying best practices for secure
+                            <p class="fs-sm-6">We prioritize the safety of your goods, applying best practices for
+                                secure
                                 transportation. <a id="toggle-less"
                                     style="cursor: pointer; color: #219ebc; font-weight: bold;">Read Less</a></p>
                         </div>
@@ -292,20 +410,20 @@
                         <h3>
                             Distribution Management
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6 ">
                             Streamlined distribution solutions ensure greater market penetration
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             At Pass, we provide distribution services to help companies efficiently manage their
                             distribution needs.
                             Our comprehensive solutions are designed to optimize your supply chain, enhance customer
                             satisfaction, and
                             reduce operational costs.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             Our team is ready to provide exceptional support and guidance throughout the distribution
                             process.
-                        </p>
+                        </p class="fs-sm-6">
                         <a href="#request">
                             <button class="request-service-btn btn rounded-2 main-btn text-white"> Request Service
                                 Now</button>
@@ -329,17 +447,17 @@
                         <h3>
                             Storage Services
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6">
                             At Pass, we understand that effective storage is crucial for maintaining your goods'
                             quality. Our advanced
                             storage solutions are designed to meet your business requirements and ensure cost reduction
                             while
                             enhancing efficiency.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We offer flexible storage options tailored to your inventory.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             Our strategies focus on reducing storage costs without compromising quality or
                             accessibility.
                         </p>
@@ -366,22 +484,22 @@
                         <h3>
                             Land Transportation
                         </h3>
-                        <p class="fw-bold ">
+                        <p class="fw-bold fs-sm-6">
                             We understand that fast delivery is a very important factor for any customer when ordering
                             from any brand,
                             which is why we have a strong fleet of equipped vehicles to provide you with a unique,
                             smooth and reliable
                             experience.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             Enjoy instant land shipping for orders
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We guarantee the safety of your shipments from damage, breakage or loss of quality and help
                             you, thanks to
                             our fleet, to provide integrated solutions to reduce costs.
                         </p>
-                        <p>
+                        <p class="fs-sm-6">
                             We believe that our success lies in the success of our clients, and therefore we are keen to
                             provide
                             services that contribute to enhancing their business and increasing their operational
@@ -417,7 +535,8 @@
                                 </span>
                                 Expert Analysis
                             </h4>
-                            <p>We evaluate your current supply chain processes to identify inefficiencies and
+                            <p class="fs-sm-6">We evaluate your current supply chain processes to identify
+                                inefficiencies and
                                 improvement
                                 opportunities.
                             </p>
@@ -432,7 +551,8 @@
                                 </span>
                                 Customized Solutions
                             </h4>
-                            <p>Our consulting services are designed to meet your company's unique needs, ensuring
+                            <p class="fs-sm-6">Our consulting services are designed to meet your company's unique needs,
+                                ensuring
                                 optimal
                             </p>
                         </div>
@@ -446,7 +566,8 @@
                                 </span>
                                 Strategic Planning
                             </h4>
-                            <p>We help you develop strategic plans that align with your business goals and enhance
+                            <p class="fs-sm-6">We help you develop strategic plans that align with your business goals
+                                and enhance
                                 overall supply chain
                             </p>
                         </div>
@@ -460,7 +581,8 @@
                                 </span>
                                 Implementation Support
                             </h4>
-                            <p>Our team guides you through implementing new strategies, ensuring a smooth transition and
+                            <p class="fs-sm-6">Our team guides you through implementing new strategies, ensuring a
+                                smooth transition and
                                 measurable
                             </p>
                         </div>
@@ -476,7 +598,7 @@
                 <h2 class="section-title highlighted-title   position-relative d-inline-block rounded-2">Our Solutions
                     Package</h2>
                 <div class="solutions-grid row d-flex flex-wrap   justify-content-flex-start">
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4 ">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4 ">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -486,13 +608,14 @@
                                 </span>
                                 Comprehensive Documentation
                             </h4>
-                            <p>We prepare and manage all documents required for customs clearance, including invoices,
+                            <p class="fs-sm-6">We prepare and manage all documents required for customs clearance,
+                                including invoices,
                                 packing lists,
                                 and certificates of origin. We protect you from delays due to documentation issues.
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -501,14 +624,15 @@
                                 </span>
                                 Compliance Guarantee
                             </h4>
-                            <p>Stay compliant with constantly changing customs regulations. Our experts stay updated on
+                            <p class="fs-sm-6">Stay compliant with constantly changing customs regulations. Our experts
+                                stay updated on
                                 local and
                                 international laws, ensuring your shipments meet all regulatory requirements and avoid
                                 high fines.
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3  col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3  col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -518,14 +642,15 @@
                                 </span>
                                 Fees and Taxes Optimization
                             </h4>
-                            <p>We analyze your shipments to identify potential duty and tax savings. Our team works hard
+                            <p class="fs-sm-6">We analyze your shipments to identify potential duty and tax savings. Our
+                                team works hard
                                 to ensure you
                                 benefit from applicable exemptions and preferential trade agreements, reducing your
                                 overall costs
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -534,13 +659,14 @@
                                 </span>
                                 Real-time Tracking
                             </h4>
-                            <p>With our advanced tracking systems, you'll have clear visibility of your shipments at
+                            <p class="fs-sm-6">With our advanced tracking systems, you'll have clear visibility of your
+                                shipments at
                                 every stage of the
                                 customs process. Get real-time updates and alerts, keeping you informed and in control.
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -549,13 +675,14 @@
                                 </span>
                                 Personal Support
                             </h4>
-                            <p>Our customer support team is available to assist you anytime. Whether you have questions
+                            <p class="fs-sm-6">Our customer support team is available to assist you anytime. Whether you
+                                have questions
                                 about your
                                 shipment status or need guidance on customs regulations, we're here to help.
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -565,7 +692,8 @@
                                 </span>
                                 Fast and Reliable Clearance
                             </h4>
-                            <p>We pride ourselves on our efficiency. Our streamlined processes and strong relationships
+                            <p class="fs-sm-6">We pride ourselves on our efficiency. Our streamlined processes and
+                                strong relationships
                                 with customs
                                 authorities ensure quick clearance of your shipments, minimizing delays.
                             </p>
@@ -582,7 +710,7 @@
                 <h2 class="section-title highlighted-title   position-relative d-inline-block rounded-2">Our Solutions
                     Package</h2>
                 <div class="solutions-grid row d-flex flex-wrap   justify-content-flex-start">
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4 ">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4 ">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -592,7 +720,8 @@
                                 </span>
                                 Comprehensive Distribution Network
                             </h4>
-                            <p>Leverage our extensive distribution network inside and outside the Kingdom to ensure your
+                            <p class="fs-sm-6">Leverage our extensive distribution network inside and outside the
+                                Kingdom to ensure your
                                 products reach
                                 customers quickly and efficiently. We have strategically located warehouses and
                                 distribution centers to
@@ -600,7 +729,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3 col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3 col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -610,14 +739,15 @@
                                 </span>
                                 Picking and Packing Services
                             </h4>
-                            <p> We handle all aspects of order fulfillment, from picking items to packing them securely
+                            <p class="fs-sm-6"> We handle all aspects of order fulfillment, from picking items to
+                                packing them securely
                                 for shipping.
                                 Our efficient processes ensure accuracy and speed, enhancing your overall customer
                                 experience.
                             </p>
                         </div>
                     </div>
-                    <div class="solution-card rounded-3  col-md-6 col-lg-4">
+                    <div class="solution-card rounded-3  col-md-12 col-lg-4">
                         <div class="card p-2">
                             <h4 class="d-flex align-items-center">
                                 <span
@@ -627,7 +757,8 @@
                                 </span>
                                 Returns Management
                             </h4>
-                            <p>Streamline your returns process through our effective returns management services. We
+                            <p class="fs-sm-6">Streamline your returns process through our effective returns management
+                                services. We
                                 handle reverse
                                 logistics, making it easy for your customers to return products and ensuring a
                                 hassle-free experience.
@@ -643,8 +774,9 @@
         <!-- Start service-request-section -->
         <section id="request" class="service-request-section">
             <div class="form-container">
-                <h2 class="text-center lh-lg fs-1 fw-semibold">Request Service</h2>
-                <p class="text-center fs-5 fw-medium lh-lg">Request a service or get a free consultation through the
+                <h2 class="text-center lh-lg fs-45 fw-semibold">Request Service</h2>
+                <p class="text-center fs-5 fw-medium lh-lg fs-sm-6">Request a service or get a free consultation through
+                    the
                     following form</p>
                 <form class="service-form p-4 d-flex flex-column gap-4 rounded-2">
 
@@ -778,6 +910,9 @@
         </div>
     </div>
 
+
+    <!-- Bootstrap JS (required for Offcanvas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Scripts -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
